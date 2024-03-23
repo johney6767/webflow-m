@@ -66,7 +66,7 @@ async function getMedium() {
   {
     article = o.items[i];
     let title = article.title;//.substr(0,TITLE_MAX_LENGTH);
-    let link=article.link;
+    // let link=article.link;
 
     //here, if we find no image was provided, we replace the default medium pixel with our default image above
     let img=(article.thumbnail && article.thumbnail.substr(19,7) != '_/stat?')?article.thumbnail:DEFAULT_THUMBNAIL;
